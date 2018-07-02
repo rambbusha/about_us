@@ -2,21 +2,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<!-- set the encoding of your site -->
-	<!-- set the viewport width and initial-scale on mobile devices -->
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Globuzzer - About Us</title>
-	<!-- include the site stylesheet -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/swiper.min.css">
     <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+    
     <link href="grid/simple-grid.css" rel="stylesheet" />
-   <!-- <link href="stylesheets/header-footer.css" rel="stylesheet"/> -->
 	<link rel="stylesheet" href="stylesheets/partner.css">
 	<link href="stylesheets/aboutuscss.css" rel="stylesheet"/>
 	
 	 <!-- include the site js -->
-	 <script type="text/javascript" src="js/jquery-1.11.2.min.js" defer></script>
+		 <script type="text/javascript" src="js/jquery-1.11.2.min.js" defer></script>
 	 <script src="js/swiper.js"></script>
 	 <script src="js/swiper.min.js"></script>
 	 <script defer src="js/all.js"></script>
@@ -448,15 +446,16 @@
     
 		
         
-        
+ <div class="team-photo-container">
+  <div id="team-photo"></div>
+ 
+
         
         
         
         
 	<!-- Helsinki Map -->
-		<div class="hel-map">
-			<img src="Materials/HelMap.jpg" alt="Helsinki map">
-		</div>
+		
 	<!-- Join team-->
 	<section class="globuzzer-holder center join">
 	<div class="container_join">
@@ -620,6 +619,16 @@
 	
 
 	$('ul.tabs li').last().addClass("tab_last");
+	
+	// parallax-photo
+	
+	 var bg = $('#team-photo');
+ $(window).scroll(function() {
+   var x = $(this).scrollTop();
+   team-photo.css('background-position', '0% ' + parseInt(-x / 10) + 'px');
+ });
+	
+	
      
      </script>
      <script type="text/javascript"
