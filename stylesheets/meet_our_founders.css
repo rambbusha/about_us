@@ -1,0 +1,69 @@
+.meet-our-founders-text h3 {
+    font-size: 15px;
+    font-weight: 400;
+}
+.meet-our-founders-text h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+.meet-our-founders{
+    margin: 0;
+    padding: 50px 0;
+    background: #F9F7F8;
+}
+.founder-scroller {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    width: 90%;
+}
+.founder-scroller-div:not(:last-child) {
+    margin-right: 30px;
+}
+.founder-scroller-div{
+    width: 120px;
+}
+.founder-avatar {
+    width: 120px;
+    height: 120px;
+}
+.founder-meet__image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    height: 100%;
+}
+.meet-our-founders-text{
+    margin-bottom: 50px;
+}
+.founder-about h4 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 35px;
+    margin-top: 15px;
+}
+.founder-about p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+}
+a.video {
+    background: #F38181;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 1px 50px;
+    margin-top: 50px;
+    display: inline-block;
+    border-radius: 50px;
+}
+@media screen and (min-width: 720px){
+    .founder-scroller-inner{
+        padding: 0;
+    }
+    .founder-scroller{
+        width: 100%;
+        justify-content: center;
+    }
+}

@@ -98,13 +98,6 @@ body {
 	
 	}
 
-.founder-meet__image {
-    width: 100px;
-	height: 100px;
-	background-size:contain;
-	background-repeat:no-repeat;
-	border-radius: 50%;
-}
 
 
 
@@ -239,13 +232,6 @@ body {
 		}
 		.btn--pink p{
 			font-size:3rem;
-		}
-		.video h2{
-			font-size:5rem;
-		}
-		.video{
-			width:20px;
-			height:15px;
 		}
 		.col-12{
 	background-color:#DED3D9;
@@ -634,21 +620,6 @@ body {
 	font-size:2.5rem;
 }
 
-.video{
-	background-color:#F38181;
-  color: #fff;
-  font-size: 2rem;
-  text-decoration:none;
-  border-radius: 30px;
-  width: 150px;
-  padding: 5px 10px;
-  margin: 15px 0;
-  height: 40px;
-  outline: none;
-  cursor: pointer;
-  display: inline-block;
-  vertical-align: center;
-}
 
 .featured-videos {
     color: #422736;
@@ -1071,7 +1042,7 @@ ul.tabs li.active {
 /* width */
 
 ::-webkit-scrollbar {
-    height: 1.5rem;
+    height: 10px;
     width: 1rem;
 }
 
