@@ -263,6 +263,7 @@
 .video-small .play {
   width: 40px !important;
   height: 40px !important;
+  opacity:0;
 }
 
 .youtube-wrapper .tag {
