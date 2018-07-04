@@ -35,14 +35,14 @@
         <link rel="stylesheet" href="stylesheets/jquery-ui.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
-         <script src="http://www.youtube.com/player_api"></script>
+    
     <script>
             $( document ).ready(function(){ 
 
                 $( "#big_video" ).click(function() {
 
-                    $( "#parent div.cover" ).removeClass( "cover cover-on" );
-                    $( "#parent iframe" ).attr('src', 'https://www.youtube.com/embed/K3vOSmkhCOM?rel=0&amp;amp;controls=0&amp;amp;showinfo=0;autoplay=1');
+                   
+                    $( "#parent iframe" ).attr('src', 'https://www.youtube.com/embed/K3vOSmkhCOM?rel=0&amp;amp;controls=0&amp;amp;showinfo=0;autoplay=1' );
                     $( "#parent div.cover" ).addClass( "cover cover-on" );
                     $( "#parent .slide" ).text( 'Rami' );
 
@@ -52,7 +52,7 @@
                 $( "#rami_video" ).click(function() {
 
                    
-                    $( "#parent iframe" ).attr('src', 'https://www.youtube.com/embed/K3vOSmkhCOM?rel=0&amp;amp;controls=0&amp;amp;showinfo=0;autoplay=1;');
+                    $( "#parent iframe" ).attr('src', 'https://www.youtube.com/embed/K3vOSmkhCOM?rel=0&amp;amp;controls=0&amp;amp;showinfo=0;autoplay=1');
                     $( "#parent div.cover" ).addClass( "cover cover-on" );
                     $( "#parent .slide" ).text( 'Rami' );
 
@@ -63,7 +63,7 @@
                     
                     
                     $( "#parent iframe" ).attr('src','https://www.youtube.com/embed/SR0XcQR9lOU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0;autoplay=1');
-                    $( "#parent div.cover" ).addClass( "cover cover-on" );
+                    $( "#parent div.cover" ).addClass( "cover cover-on play" );
                     $( "#parent .slide" ).text( 'Andrea' );
 
 
@@ -369,72 +369,37 @@
                 </div>
         
        <div class="col-12"> 
+      
            <div class="section_video_container">
-               <div class="small-wrapper" style="background-color:black;">
-                             
-                <div id="parent" class="youtube-wrapper sweden-video "  style="height: 100%;" >
-                        <div id="big_video" class="cover"   style="background-image:  url(Materials/aboutus/rami.jpg);background-size: 100% 100%">
-                        <div class="play">
-                            <img src="Images/video-play.png">
-                        </div>
-                        </div>
-                        <iframe align="middle" width="560" height="315" frameborder="0" allowfullscreen="" src=""> </iframe>
+               <div id="parent" class="active-video sweden-video" style="background-image:  url(Materials/aboutus/andrea.jpg);background-size: 100% 100%">  
+                   Active Video</div>
+               <div class="testimonial-text">"It is better to travel well than to arrive "</div>
+               
+               <div class="video_thumbnails">
+                   <div id="rami_video" class=" youtube-wrapper cover norway-video video-small" style="background-image:  url(Materials/aboutus/rami.jpg);background-size: 100% 100%" >
                        
-                        <div class="slide" style="width:100%;height:10%">Rami</div>
-                        
-                        
-                </div>
+                     <iframe align="middle" width="170" height="25" frameborder="0" allowfullscreen="" src=""> </iframe>
+              Video Thumbnails</div>
                    
-                
-                <div id ="inner-wrapper_r" class="youtube-wrapper sweden-video video-small" style=" height: 100%;" >
-                        <div id="rami_video" class="cover" style="background-image:  url(Materials/aboutus/rami.jpg);background-size: 100% 100%">
-                            
-                        <div class="play">
-                             <img src="Images/video-play.png">
-                        </div>
-                        </div>
-                        <iframe align="middle" width="560" height="315" frameborder="0" allowfullscreen="" src=""> </iframe>
-                        <div class="slide" style="width:100%;height:30%" >Rami</div>
-                </div>
-                    
-                <div id ="inner-wrapper_a" class="youtube-wrapper denmark-video video-small" >
-                        <div id="andrea_video" class="cover" style="background-image:  url(Materials/aboutus/andrea.jpg);background-size: 100% 100% ">
-                        <div class="play">
-                             <img src="Images/video-play.png">
-                        </div>
-                        </div>
-                        <iframe align="middle" width="560" height="315" frameborder="0" allowfullscreen="" src=""> </iframe>
-                        <div class="slide"  style="width:100%;height:30%" >Andrea</div>
-                </div>
-                
-                
-                <div id ="inner-wrapper_rd" class="youtube-wrapper finland-video video-small" >
-                        <div id="rodion_video" class="cover" style="background-image:  url(Materials/aboutus/rodion.jpg);background-size: 100% 100%">
-                        <div class="play">
-                                <img src="Images/video-play.png">
-                        </div>
-                        </div>
-                        <iframe align="middle" width="560" height="315" frameborder="0" allowfullscreen="" src=""> </iframe>
-                        <div class="slide"   style="width:100%;height:30%">Rodion</div>
-                </div>
-                    
-                <div id ="inner-wrapper_j" class="youtube-wrapper norway-video video-small">
-                        <div id="jovita_video" class="cover" style="background-image:  url(Materials/aboutus/jovita.jpg);background-size: 100% 100%" >
-                        <div class="play" >
-                                <img src="Images/video-play.png">
-                        </div>
-                        </div>
-                        <iframe align="middle" width="560" height="315" frameborder="0" allowfullscreen="" src=""> </iframe>
-                        <div class="slide"  style="width:100%;height:30%">Jovita</div>
-                </div>
-                
+                   
+                   <div id="andrea_video"   class="youtube-wrapper norway-video video-small"  style="background-image:  url(Materials/aboutus/andrea.jpg);background-size: 100% 100% " >
+                   <iframe align="middle" width="170" height="25" frameborder="0" allowfullscreen="" src=""> </iframe>  
+                       Video Thumbnails</div>
+                   
+                   <div  id="rodion_video"  class="youtube-wrapper norway-video video-small" style="background-image:  url(Materials/aboutus/rodion.jpg);background-size: 100% 100%">
+                     <iframe align="middle" width="170" height="25" frameborder="0" allowfullscreen="" src=""> </iframe>  
+                       Video  Thumbnails</div>
+                   <div id="jovita_video" class="youtube-wrapper norway-video video-small" style="background-image:  url(Materials/aboutus/jovita.jpg);background-size: 100% 100%"> 
+                       <iframe align="middle" width="170" height="25" frameborder="0" allowfullscreen="" src=""> </iframe>
+                       Video Thumbnails</div>
+                   <div id="jovita_video" class="youtube-wrapper norway-video video-small" style="background-image:  url(Materials/aboutus/jovita.jpg);background-size: 100% 100%"> 
+                    <iframe align="middle" width="170" height="25" frameborder="0" allowfullscreen="" src=""> </iframe>
+                       Video Thumbnails</div>
+                   
                </div>
-         
-
            </div>
-           
-           
-           </div>
+          
+        </div>
         
         
             
