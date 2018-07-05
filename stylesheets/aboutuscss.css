@@ -6,6 +6,10 @@
     box-sizing: inherit;
 }
 
+html {
+    font-size: 3.5px;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -87,10 +91,10 @@ body {
 	
 	}
 	.needs-titles p {
-		font-size: 1.5rem;	
+		font-size: 12px;	
 	}
 	.needs-titles h2 {
-		font-size: 2rem;
+		font-size: 20px;
 	
 	}
 	.needs-titles h1 {
@@ -212,6 +216,7 @@ body {
 
 .feedback-holder p{
 	text-align:left;
+	margin-left:20px;
 }
 
 	
@@ -251,7 +256,6 @@ body {
 	background-color:#DED3D9;
 	
 }
-			
 }
 
 .meet-our-founders {
@@ -269,8 +273,9 @@ body {
 }
 
 .heading-secondary--sub {
-    font-size: 2.3rem;
+    font-size: 17px;
     font-weight: 500;
+	margin-right:20px;
     margin-bottom: 8rem;
     color: #422736;
 }
@@ -933,7 +938,7 @@ ul.tabs li.active {
 	.tab_drawer_heading {
 		background-color:#B9E1DC ;
 		color: black;
-		font-size:3.5rem;
+		font-size:20px;
 		border-radius:20px;
 		border-top: 1px solid #333;
 		text-align:center;
@@ -1983,14 +1988,12 @@ ul.tabs li.active {
 	.sthml-section__title {
     font-size: 8rem;
     font-weight: 500;
-	padding-top:0px;
+	padding-top:20px;
 }
 .members-area__wrapper{
-	width:90%;
-}
-
-
-
+	margin-top:50px;
+	margin-left:50px;
+	width:100%;
 }
 
 
