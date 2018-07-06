@@ -1,470 +1,468 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<!-- set the encoding of your site -->
-	<!-- set the viewport width and initial-scale on mobile devices -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Globuzzer - About Us</title>
-	<!-- include the site stylesheet -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="stylesheets/swiper.min.css">
-    <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
-    <link href="grid/simple-grid.css" rel="stylesheet" />
-   <!-- <link href="stylesheets/header-footer.css" rel="stylesheet"/> -->
-	<link rel="stylesheet" href="stylesheets/partner.css">
-	<link href="stylesheets/aboutuscss.css" rel="stylesheet"/>
-    
-    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <!-- CLEAN STYLING ( ALMOST ) -->
-    <link rel="stylesheet" href="stylesheets/navigation_bar_clean.css">
-    <link rel="stylesheet" href="stylesheets/join_team_clean.css">
+        
+        <title>Globuzzer - About Us</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="stylesheets/swiper.min.css">
+        <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+
+        <link href="grid/simple-grid.css" rel="stylesheet" />
+        <link rel="stylesheet" href="stylesheets/partner.css">
+        <link href="stylesheets/aboutuscss.css" rel="stylesheet"/>
+
+        <!-- include the site js -->
+        <script type="text/javascript" src="js/jquery-1.11.2.min.js" defer></script>
+        <script src="js/swiper.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script defer src="js/all.js"></script>
+        <script src="js/jquery-latest.min.js"></script>
+        <script src="scripts/home.js"></script>
+        <script type="text/javascript" src="js/filters.js" defer></script>
+        <script type="text/javascript" src="js/jquery.main.js" defer></script>
+
+        <link rel="stylesheet" href="maps/css/map.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript" src="maps/js/infoBubble.js"></script>
 
 
-
-
-
-
-
-
-
-
-	 <!-- include the site js -->
-	 <script type="text/javascript" src="js/jquery-1.11.2.min.js" defer></script>
-	 <script src="js/swiper.js"></script>
-	 <script src="js/swiper.min.js"></script>
-	 <script defer src="js/all.js"></script>
-	 <script src="js/jquery-latest.min.js"></script>
-	 <script src="scripts/home.js"></script>
-	 <script type="text/javascript" src="js/filters.js" defer></script>
-	 <script type="text/javascript" src="js/jquery.main.js" defer></script>
-     
-     <link rel="stylesheet" href="maps/css/map.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script type="text/javascript" src="maps/js/infoBubble.js"></script>
-    
-    
-    	<link rel="stylesheet" href="stylesheets/style.css">
+        <link rel="stylesheet" href="stylesheets/style.css">
         <link rel="stylesheet" href="stylesheets/index.css">
         <link rel="stylesheet" href="stylesheets/jquery-ui.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
-    
-    <script>
+
+
+        <script>
             $( document ).ready(function(){ 
 
-                $( "#big_video" ).click(function() {
 
-                   
-                    $( "#parent iframe" ).attr('src', 'https://www.youtube.com/embed/K3vOSmkhCOM?rel=0&amp;amp;controls=0&amp;amp;showinfo=0;autoplay=1' );
-                    $( "#parent div.cover" ).addClass( "cover cover-on" );
-                    $( "#parent .slide" ).text( 'Rami' );
+                $( "#play_button" ).click(function() {
 
+                    $('#play_button_image').hide(); 
+                    $( "#parent iframe" ).attr('src', 'https://www.youtube.com/embed/K3vOSmkhCOM?rel=0&amp;amp;controls=1;autoplay=1');
 
                 });
-                
+
                 $( "#rami_video" ).click(function() {
 
-                   
-                    $( "#parent iframe" ).attr('src', 'https://www.youtube.com/embed/K3vOSmkhCOM?rel=0&amp;amp;controls=0&amp;amp;showinfo=0;autoplay=1');
-                    $( "#parent div.cover" ).addClass( "cover cover-on" );
-                    $( "#parent .slide" ).text( 'Rami' );
-
+                    $('#play_button_image').hide(); 
+                    $( "#parent iframe" ).attr('src', 'https://www.youtube.com/embed/K3vOSmkhCOM?rel=0&amp;amp;controls=1;autoplay=1');
 
                 });
 
                 $( "#andrea_video" ).click(function() {
-                    
-                    
-                    $( "#parent iframe" ).attr('src','https://www.youtube.com/embed/SR0XcQR9lOU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0;autoplay=1');
-                    $( "#parent div.cover" ).addClass( "cover cover-on play" );
-                    $( "#parent .slide" ).text( 'Andrea' );
 
-
+                    $('#play_button_image').hide(); 
+                    $( "#parent iframe" ).attr('src','https://www.youtube.com/embed/SR0XcQR9lOU?rel=0&amp;amp;controls=1;autoplay=1');
                 });
 
                 $( "#jovita_video" ).click(function() {
-                    $( "#parent iframe" ).attr('src','https://www.youtube.com/embed/XRLAhcEPHlc?rel=0&amp;amp;controls=0&amp;amp;showinfo=0;autoplay=1');
-                    $( "#parent div.cover" ).addClass( "cover cover-on" );
-                    $( "#parent .slide" ).text( 'Jovita' );
+
+                    $('#play_button_image').hide(); 
+                    $( "#parent iframe" ).attr('src','https://www.youtube.com/embed/XRLAhcEPHlc?rel=0&amp;amp;controls=1;autoplay=1');
 
                 });
 
                 $( "#rodion_video" ).click(function() {
 
-                    $( "#parent iframe" ).attr('src','https://www.youtube.com/embed/yawXq5TlgBU?rel=0&amp;amp;controls=0&amp;amp;showinfo=0;autoplay=1');
-                    $( "#parent div.cover" ).addClass( "cover cover-on" );
-                    $( "#parent .slide" ).text( 'Rodion' );
+                    $('#play_button_image').hide(); 
+                    $( "#parent iframe" ).attr('src','https://www.youtube.com/embed/yawXq5TlgBU?rel=0&amp;amp;controls=1;autoplay=1');
+
                 });
+                
+              
+                $( "# jovita_video_dummy" ).click(function() {
+
+                    $('#play_button_image').hide(); 
+                    $( "#parent iframe" ).attr('src','https://www.youtube.com/embed/yawXq5TlgBU?rel=0&amp;amp;controls=1;autoplay=1');
+
+                });
+                
 
             });   
         </script>
-     
-     
-    
-</head>
-<body>
-<div class="site-wrapper">
 
-	<header class="header">
-      
-      <nav>
-        <div class="header__logo-box">
-            <svg class='big__logo'>
-                <use xlink:href='svg/symbol-defs.svg#logo'>
-                </use>
-            </svg>
-        </div>
-        <div class='burger'>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-          <div class='header__navigation__wrapper'>
-                <ul class="header__navigation">
-                    <a href="index.html">
-                        <li>Home</li>
-                    </a>
-                    <a class='active' href="#aboutus">
-                        <li>About us</li>
-                    </a>
 
-                    <a href="#sections">
-                        <li>Sections</li>
-                    </a>
 
-                    <a href="#partners">
-                        <li>Partners</li>
-                    </a>
+    </head>
+    <body>
+        <div class="site-wrapper">
 
-                    <a href="#contactus">
-                        <li>Contact us</li>
-                    </a>
+            <header class="header">
 
-                    <a href="https://globuzzer.mn.co/sign_in">
-                        <li>Log in</li>
-                    </a>
-                </ul>
-                <svg class='small__logo'>
-                    <use xlink:href='svg/symbol-defs.svg#logo'>
-                    </use>
-                </svg>
-          </div>
-      </nav>
+                <nav>
+                    <div class="header__logo-box">
+                        <a href="#"><img src="Materials/logo-gb-white.svg" alt="Logo" class="header__logo"></a>
+                    </div>
+                    <a href="#" class="toggle"><i class="fas fa-bars"></i></a>
+                    <div class="header__menu">
+                        <ul class="header__navigation">
+                            <a href="index.html">
+                                <li>Home</li>
+                            </a>
+                            <a href="#aboutus">
+                                <li>About us</li>
+                            </a>
 
-    
-	</header>
-    
-    
-   
-   
-              
-              
-          <div class="row">
-			<div class="members-area">
-           			<div class="col-12">	<div class="sthml-section__image sthml-section__image--sthml blogBox"><p class="sthml-section__title">Stockholm Team</p></div> </div> 
-            
-           <div class="col-12">
-            <div class="members-area__wrapper">
-               		<div class="photos">
-                       <a href="#popup1"> <img src="Materials/aboutus/rami.jpg" class="founder-profile__image"></a>
-                   </div>
-                   		<div id="popup1" class="overlay">
-                            <div class="popup">
-                                <h2>Hi, I am Rami</h2>
-                                <a class="close" href="#">&times;</a>
-                                <div class="content">
-                                   brief introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                                <br> <b> visit:</b><a href="https://globuzzer.mn.co/members/466024"> https://globuzzer.mn.co/members/466024 </a>
+                            <a href="#sections">
+                                <li>Sections</li>
+                            </a>
+
+                            <a href="#partners">
+                                <li>Partners</li>
+                            </a>
+
+                            <a href="#contactus">
+                                <li>Contact us</li>
+                            </a>
+
+                            <a href="https://globuzzer.mn.co/sign_in">
+                                <li>Log in</li>
+                            </a>
+                        </ul>
+                    </div>
+                </nav>
+
+
+            </header>
+
+
+
+
+
+
+            <div class="row">
+                <div class="members-area">
+                    <div class="col-12">	<div class="sthml-section__image sthml-section__image--sthml blogBox"><p class="sthml-section__title">Stockholm Team</p></div> </div> 
+
+                    <div class="col-12">
+                        <div class="members-area__wrapper">
+                            <div class="photos">
+                                <a href="#popup1"> <img src="Materials/aboutus/rami.jpg" class="founder-profile__image"></a>
+                            </div>
+                            <div id="popup1" class="overlay">
+                                <div class="popup">
+                                    <h2>Hi, I am Rami</h2>
+                                    <a class="close" href="#">&times;</a>
+                                    <div class="content">
+                                        brief introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                        <br> <b> visit:</b><a href="https://globuzzer.mn.co/members/466024"> https://globuzzer.mn.co/members/466024 </a>
+                                    </div>
                                 </div>
                             </div>
-                         </div>
-                     <div class="photos">
-                       <a href="#popup2"> <img src="Materials/aboutus/jovita.jpg" class="founder-profile__image"></a>
-                   </div>
-                   		<div id="popup2" class="overlay">
-                            <div class="popup">
-                                <h2>Hi, I am Jovita</h2>
-                                <a class="close" href="#">&times;</a>
-                                <div class="content">
-                                     brief introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                                <br> <b> visit:</b><a href="https://globuzzer.mn.co/members/466024"> https://globuzzer.mn.co/members/466024 </a>
+                            <div class="photos">
+                                <a href="#popup2"> <img src="Materials/aboutus/jovita.jpg" class="founder-profile__image"></a>
+                            </div>
+                            <div id="popup2" class="overlay">
+                                <div class="popup">
+                                    <h2>Hi, I am Jovita</h2>
+                                    <a class="close" href="#">&times;</a>
+                                    <div class="content">
+                                        brief introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                        <br> <b> visit:</b><a href="https://globuzzer.mn.co/members/466024"> https://globuzzer.mn.co/members/466024 </a>
+                                    </div>
                                 </div>
                             </div>
-                         </div>
-                           <div class="photos">
-                       <a href="#popup3"> <img src="Materials/aboutus/rodion.jpg" class="founder-profile__image"></a>
-                   </div>
-                   		<div id="popup3" class="overlay">
-                            <div class="popup">
-                                <h2>Hi, I am Rodion</h2>
-                                <a class="close" href="#">&times;</a>
-                                <div class="content">
-                                     brief introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                                <br> <b> visit:</b><a href="https://globuzzer.mn.co/members/466024"> https://globuzzer.mn.co/members/466024 </a>
+                            <div class="photos">
+                                <a href="#popup3"> <img src="Materials/aboutus/rodion.jpg" class="founder-profile__image"></a>
+                            </div>
+                            <div id="popup3" class="overlay">
+                                <div class="popup">
+                                    <h2>Hi, I am Rodion</h2>
+                                    <a class="close" href="#">&times;</a>
+                                    <div class="content">
+                                        brief introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                        <br> <b> visit:</b><a href="https://globuzzer.mn.co/members/466024"> https://globuzzer.mn.co/members/466024 </a>
+                                    </div>
                                 </div>
                             </div>
-                         </div>
-                           <div class="photos">
-                       <a href="#popup4"> <img src="Materials/aboutus/rami.jpg" class="founder-profile__image"></a>
-                          </div>
-                   		<div id="popup4" class="overlay">
-                            <div class="popup">
-                                <h2>Hi, I am Rami</h2>
-                                <a class="close" href="#">&times;</a>
-                                <div class="content">
-                                     brief introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                                <br> <b> visit:</b><a href="https://globuzzer.mn.co/members/466024"> https://globuzzer.mn.co/members/466024 </a>
+                            <div class="photos">
+                                <a href="#popup4"> <img src="Materials/aboutus/rami.jpg" class="founder-profile__image"></a>
+                            </div>
+                            <div id="popup4" class="overlay">
+                                <div class="popup">
+                                    <h2>Hi, I am Rami</h2>
+                                    <a class="close" href="#">&times;</a>
+                                    <div class="content">
+                                        brief introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                        <br> <b> visit:</b><a href="https://globuzzer.mn.co/members/466024"> https://globuzzer.mn.co/members/466024 </a>
+                                    </div>
                                 </div>
                             </div>
-                         </div>
-                           <div class="photos">
-                       <a href="#popup5"> <img src="Materials/aboutus/jovita.jpg" class="founder-profile__image"></a>
-                          </div>
-                   		<div id="popup5" class="overlay">
-                            <div class="popup">
-                                <h2>Hi, I am Jovita</h2>
-                                <a class="close" href="#">&times;</a>
-                                <div class="content">
-                                     brief introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                                <br> <b> visit:</b><a href="https://globuzzer.mn.co/members/466024"> https://globuzzer.mn.co/members/466024 </a>
+                            <div class="photos">
+                                <a href="#popup5"> <img src="Materials/aboutus/jovita.jpg" class="founder-profile__image"></a>
+                            </div>
+                            <div id="popup5" class="overlay">
+                                <div class="popup">
+                                    <h2>Hi, I am Jovita</h2>
+                                    <a class="close" href="#">&times;</a>
+                                    <div class="content">
+                                        brief introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                        <br> <b> visit:</b><a href="https://globuzzer.mn.co/members/466024"> https://globuzzer.mn.co/members/466024 </a>
+                                    </div>
                                 </div>
                             </div>
-                         </div>
-                    <div class="photos">
-                       <a href="#popup6"> <img src="Materials/aboutus/rami.jpg" class="founder-profile__image"></a>
-                   </div>
-                   		<div id="popup6" class="overlay">
-                            <div class="popup">
-                                <h2>Hi, I am rami</h2>
-                                <a class="close" href="#">&times;</a>
-                                <div class="content">
-                                     brief introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                                <br> <b> visit:</b><a href="https://globuzzer.mn.co/members/466024"> https://globuzzer.mn.co/members/466024 </a>
+                            <div class="photos">
+                                <a href="#popup6"> <img src="Materials/aboutus/rami.jpg" class="founder-profile__image"></a>
+                            </div>
+                            <div id="popup6" class="overlay">
+                                <div class="popup">
+                                    <h2>Hi, I am rami</h2>
+                                    <a class="close" href="#">&times;</a>
+                                    <div class="content">
+                                        brief introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                        <br> <b> visit:</b><a href="https://globuzzer.mn.co/members/466024"> https://globuzzer.mn.co/members/466024 </a>
+                                    </div>
                                 </div>
                             </div>
-                         </div>
-                         
-                           <div class="photos">
-                       <a href="#popup7"> <img src="Materials/aboutus/jovita.jpg" class="founder-profile__image"></a>
-                   </div>
-                   		<div id="popup7" class="overlay">
-                            <div class="popup">
-                                <h2>Hi, I am jovita</h2>
-                                <a class="close" href="#">&times;</a>
-                                <div class="content">
-                                     brief introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                                <br> <b> visit:</b><a href="https://globuzzer.mn.co/members/466024"> https://globuzzer.mn.co/members/466024 </a>                                </div>
+
+                            <div class="photos">
+                                <a href="#popup7"> <img src="Materials/aboutus/jovita.jpg" class="founder-profile__image"></a>
                             </div>
-                         </div>
-                         
-                           <div class="photos">
-                       <a href="#popup8"> <img src="Materials/aboutus/rodion.jpg" class="founder-profile__image"></a>
-                   </div>
-                   		<div id="popup8" class="overlay">
-                            <div class="popup">
-                                <h2>Hi, I am rodion</h2>
-                                <a class="close" href="#">&times;</a>
-                                <div class="content">
-                                     brief introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                                <br> <b> visit:</b><a href="https://globuzzer.mn.co/members/466024"> https://globuzzer.mn.co/members/466024 </a>
+                            <div id="popup7" class="overlay">
+                                <div class="popup">
+                                    <h2>Hi, I am jovita</h2>
+                                    <a class="close" href="#">&times;</a>
+                                    <div class="content">
+                                        brief introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                        <br> <b> visit:</b><a href="https://globuzzer.mn.co/members/466024"> https://globuzzer.mn.co/members/466024 </a>                                </div>
                                 </div>
                             </div>
-                         </div>
-                     
-                       </div>  
+
+                            <div class="photos">
+                                <a href="#popup8"> <img src="Materials/aboutus/rodion.jpg" class="founder-profile__image"></a>
+                            </div>
+                            <div id="popup8" class="overlay">
+                                <div class="popup">
+                                    <h2>Hi, I am rodion</h2>
+                                    <a class="close" href="#">&times;</a>
+                                    <div class="content">
+                                        brief introduction: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                        <br> <b> visit:</b><a href="https://globuzzer.mn.co/members/466024"> https://globuzzer.mn.co/members/466024 </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>  
                     </div>  
-			    </div>
-            
-            
-				<div class="map-section">
-             <ul class="tabs">
-              <li class="tab_last active" rel="tab1">TEAM MEMBERS</li>
-              <li rel="tab2">SPONSORS</li>
-             </ul>
-             <div class="tab_container">
-  
-                  <h3 class="d_active tab_drawer_heading" rel="tab1">TEAM MEMBERS</h3>
-                  
-                  <div id="tab1" class="tab_content">
-                  <div id="map_member" style="width:100%; height:600px"></div>
-                  </div>
-                  
-                  <!-- #tab1 -->
-                  <h3 class="tab_drawer_heading" rel="tab2">SPONSORS</h3>
-                  <div id="tab2" class="tab_content">
-                  
-                  <div id="map_sponser" onload="initialize()" style="width:100%; height:600px"></div>
-
-                  </div>
-                 
-              </div>
-		</div>
-			</div>
-            
-            
-            
-            
-            
-            
-             <div  class="container">
-    <div class="meet-our-founders">
-            <h2 class="heading-secondary--main center">Meet The Founders</h2>
-                        <h2 class="heading-secondary--sub center">Meet everyone of us to have an insight about our culture and work style</h2>
-                <div class="founder-scroller center">
-                    
-                      <div class="founder-scroller-div">
-                         <div class="col-2 center">
-                           <div class="needs-titles">
-                              <div class="founders-logo-area">
-                                        <img src="Materials/aboutus/rami.jpg" class="founder-meet__image">
-										<p><b>Rami</b></p>
-                               			<p><b>Founder</b></p>
-                             </div>
-						 </div>
-                        </div>
-                     </div>
-                      <div class="founder-scroller-div">
-                         <div class="col-2 center">
-                           <div class="needs-titles">
-                              <div class="travelers-logo-area">
-                                        <img src="Materials/aboutus/andrea.jpg" class="founder-meet__image">
-										<p><b>Andrea</b></p>
-                               			<p><b>Co-Founder</b></p>
-                             </div>
-						 </div>
-                        </div>
-                     </div>
-                      <div class="founder-scroller-div">
-                         <div class="col-2 center">
-                           <div class="needs-titles">
-                              <div class="travelers-logo-area">
-                                        <img src="Materials/aboutus/rodion.jpg" class="founder-meet__image">
-										<p><b>Zerka</b></p>
-                               			<p><b>IT Manager</b></p>
-								
-                             </div>
-						 </div>
-                        </div>
-                     </div>
-                      <div class="founder-scroller-div">
-                         <div class="col-2 center">
-                           <div class="needs-titles">
-                              <div class="travelers-logo-area">
-                                        <img src="Materials/aboutus/rodion.jpg" class="founder-meet__image">
-										<p><b>Rodion</b></p>
-                               			<p><b>DM Helsinki</b></p>
-								
-                             </div>
-						 </div>
-                        </div>
-                     </div>
-                      <div class="founder-scroller-div">
-                         <div class="col-2 center">
-                           <div class="needs-titles">
-                              <div class="travelers-logo-area">
-                                      <img src="Materials/aboutus/jovita.jpg" class="founder-meet__image">
-										<p><b>Jovita</b></p>
-                               			<p><b>Communication Manager</b></p>
-								
-                             </div>
-						 </div>
-                        </div>
-                     </div>
-                     
-                     </div>
-					 <a href="#" class="video"><h2>VIDEO</h2></a>
-					 
-					</div>
-              </div>
-                  
-              
-            <!-- Our story-->
-       <div class="feedback-holder center">
-            
-              <div class="row">
-              
-                <div class="col-12">
-                    <div class="column">
-                        <h2>Our story</h2>
-                        <p>Globuzzer is a Social Network for Travelers and Expats.</p>
-                        <p>In each city, our aim is to provide guidance in diverse topics for newcomers.</p>
-                        <a href="#" class="opener btn-readmore"><p><font color="blue"<u>Read more</font></u></p></a>
-                  </div>
                 </div>
-        
-       <div class="col-12"> 
-      
-           <div class="section_video_container">
-               <div id="parent" class="active-video sweden-video" style="background-image:  url(Materials/aboutus/andrea.jpg);background-size: 100% 100%">  
-                   Active Video</div>
-               <div class="testimonial-text">"It is better to travel well than to arrive "</div>
-               
-               <div class="video_thumbnails">
-                   <div id="rami_video" class=" youtube-wrapper cover norway-video video-small" style="background-image:  url(Materials/aboutus/rami.jpg);background-size: 100% 100%" >
-                       
-                     <iframe align="middle" width="170" height="25" frameborder="0" allowfullscreen="" src=""> </iframe>
-              Video Thumbnails</div>
-                   
-                   
-                   <div id="andrea_video"   class="youtube-wrapper norway-video video-small"  style="background-image:  url(Materials/aboutus/andrea.jpg);background-size: 100% 100% " >
-                   <iframe align="middle" width="170" height="25" frameborder="0" allowfullscreen="" src=""> </iframe>  
-                       Video Thumbnails</div>
-                   
-                   <div  id="rodion_video"  class="youtube-wrapper norway-video video-small" style="background-image:  url(Materials/aboutus/rodion.jpg);background-size: 100% 100%">
-                     <iframe align="middle" width="170" height="25" frameborder="0" allowfullscreen="" src=""> </iframe>  
-                       Video  Thumbnails</div>
-                   <div id="jovita_video" class="youtube-wrapper norway-video video-small" style="background-image:  url(Materials/aboutus/jovita.jpg);background-size: 100% 100%"> 
-                       <iframe align="middle" width="170" height="25" frameborder="0" allowfullscreen="" src=""> </iframe>
-                       Video Thumbnails</div>
-                   <div id="jovita_video" class="youtube-wrapper norway-video video-small" style="background-image:  url(Materials/aboutus/jovita.jpg);background-size: 100% 100%"> 
-                    <iframe align="middle" width="170" height="25" frameborder="0" allowfullscreen="" src=""> </iframe>
-                       Video Thumbnails</div>
-                   
-               </div>
-           </div>
-          
+
+
+                <div class="map-section">
+                    <ul class="tabs">
+                        <li class="tab_last active" rel="tab1">TEAM MEMBERS</li>
+                        <li rel="tab2">SPONSORS</li>
+                    </ul>
+                    <div class="tab_container">
+
+                        <h3 class="d_active tab_drawer_heading" rel="tab1">TEAM MEMBERS</h3>
+
+                        <div id="tab1" class="tab_content">
+                            <div id="map_member" style="width:100%; height:600px"></div>
+                        </div>
+
+                        <!-- #tab1 -->
+                        <h3 class="tab_drawer_heading" rel="tab2">SPONSORS</h3>
+                        <div id="tab2" class="tab_content">
+
+                            <div id="map_sponser" onload="initialize()" style="width:100%; height:600px"></div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div  class="container">
+                <div class="meet-our-founders">
+                    <h2 class="heading-secondary--main center">Meet The Founders</h2>
+                    <h2 class="heading-secondary--sub center">Meet everyone of us to have an insight about our culture and work style</h2>
+                    <div class="founder-scroller center">
+
+                        <div class="founder-scroller-div">
+                            <div class="col-2 center">
+                                <div class="needs-titles">
+                                    <div class="founders-logo-area">
+                                        <img src="Materials/aboutus/rami.jpg" class="founder-meet__image">
+                                        <p><b>Rami</b></p>
+                                        <p><b>Founder</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="founder-scroller-div">
+                            <div class="col-2 center">
+                                <div class="needs-titles">
+                                    <div class="travelers-logo-area">
+                                        <img src="Materials/aboutus/andrea.jpg" class="founder-meet__image">
+                                        <p><b>Andrea</b></p>
+                                        <p><b>Co-Founder</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="founder-scroller-div">
+                            <div class="col-2 center">
+                                <div class="needs-titles">
+                                    <div class="travelers-logo-area">
+                                        <img src="Materials/aboutus/rodion.jpg" class="founder-meet__image">
+                                        <p><b>Zerka</b></p>
+                                        <p><b>IT Manager</b></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="founder-scroller-div">
+                            <div class="col-2 center">
+                                <div class="needs-titles">
+                                    <div class="travelers-logo-area">
+                                        <img src="Materials/aboutus/rodion.jpg" class="founder-meet__image">
+                                        <p><b>Rodion</b></p>
+                                        <p><b>DM Helsinki</b></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="founder-scroller-div">
+                            <div class="col-2 center">
+                                <div class="needs-titles">
+                                    <div class="travelers-logo-area">
+                                        <img src="Materials/aboutus/jovita.jpg" class="founder-meet__image">
+                                        <p><b>Jovita</b></p>
+                                        <p><b>Communication Manager</b></p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a href="#" class="video"><h2>VIDEO</h2></a>
+
+                </div>
+            </div>
+
+
+            <!-- Our story-->
+            <div class="feedback-holder center">
+
+                <div class="row">
+
+                    <div class="col-12">
+                        <div class="column">
+                            <h2>Our story</h2>
+                            <p>Globuzzer is a Social Network for Travelers and Expats.</p>
+                            <p>In each city, our aim is to provide guidance in diverse topics for newcomers.</p>
+                            <a href="#" class="opener btn-readmore"><p><font color="blue"<u>Read more</font></u></p></a>
+            </div>
         </div>
-        
-        
-            
-          </div>     
-        </section>  
-              
-              
-              
-    
-		
-        
-        
-        
-        
-        
-        
-	<!-- GB planet photo -->
-    <div class='gb_planet'></div>
-    
+
+        <div class="col-12">    
+            <div class="section_video_container">
+                <div class="col">
+
+                    <div id="parent" class="active-video" 
+                         style="background-image:  url(Materials/aboutus/andrea.jpg);background-size: 100%  100%;position: relative; left: 0; top: 0;">               
+
+
+                        <iframe  width="100%" height="100%" frameborder="0" display=none allowfullscreen="" src=""> </iframe>
+                        <div id="play_button"  class="play_button_red" >
+
+                            <img id ="play_button_image" src="Images/video-play.png" width="50" height="50">
+
+                        </div>
+                    </div>
+                    <div class="testimonial-text">"It is better to travel well than to arrive" - The Budhha</div>
+
+                </div>
+                <div class="video-thumbnails">
+                    <div id="rami_video" class="video-small"
+                         style="background-image:  url(Materials/aboutus/rami.jpg);background-size: 100% 100%" >
+
+
+                    </div> 
+                    <div id="andrea_video" class="video-small"
+                         style="background-image:  url(Materials/aboutus/andrea.jpg);background-size: 100% 100% " >
+
+
+                    </div> 
+                    <div id="rodion_video" class="video-small"
+                         style="background-image:  url(Materials/aboutus/rodion.jpg);background-size: 100% 100%" >
+
+
+                    </div> 
+                    <div id="jovita_video" class="video-small"
+                         style="background-image:  url(Materials/aboutus/jovita.jpg);background-size: 100% 100%" >
+
+
+                    </div> 
+
+                    <div id="jovita_video_dummy" class="video-small"
+                         style="background-image:  url(Materials/aboutus/jovita.jpg);background-size: 100% 100%" >
+
+                        
+                    </div> 
+
+
+                </div>
+
+            </div>    
+        </div>
+        </div>
+
+
+
+    </div>     
+</section>  
+
+
+
+
+
+
+<div class="team-photo-container">
+    <div id="team-photo"></div>
+
+
+
+
+
+
+    <!-- Helsinki Map -->
+
     <!-- Join team-->
-	<section class="join_team_wrapper">
-        <a href='#' class='join_team_content'>
-            <h2>JOIN THE TEAM</h2>
-            <p>Check out our latest job positions and join our family</p> 
-        </a>
-	</section>
-		
-			
+    <section class="globuzzer-holder center join">
+        <div class="container_join">
+            <img src="Materials/join.jpg" alt="Join team">
+            <a href="#" class="btn btn--round btn--pink" >
+                <h2>JOIN THE TEAM</h2>
+                <p>Check out our latest job positions and join our family</p> 
+            </a>
+        </div>
+    </section>
+
+
 
     <footer class="footer">
-    		<div id="contactus">
-                <div class="top-footer center">
-                    <div class="head-office-content">
-                        <h2 class="top-footer__header heading-secondary--main">Our head office</h2>
-                        <div class="container-full-width">
-                            <div class="row">
-                                <div class="col-4">
+        <div id="contactus">
+            <div class="top-footer center">
+                <div class="head-office-content">
+                    <h2 class="top-footer__header heading-secondary--main">Our head office</h2>
+                    <div class="container-full-width">
+                        <div class="row">
+                            <div class="col-4">
                                 <div class="office-content-left">
                                     <div class="office-content">
                                         <h3>Want to collaborate with us:</h3>
@@ -504,9 +502,9 @@
                                         </ul>
                                     </div>
                                 </div>
-                                </div>
-                                
-                                <div class="col-4">
+                            </div>
+
+                            <div class="col-4">
                                 <div class="office-content-middle">
                                     <div class="office-content no-padding">
                                         <div class="map-responsive">
@@ -514,9 +512,9 @@
                                         </div>
                                     </div>	
                                 </div>
-                                </div>
-                                
-                                <div class="col-4">
+                            </div>
+
+                            <div class="col-4">
                                 <div class="office-content-right">
                                     <div class="office-content">
                                         <h3>Globuzzer AB</h3>
@@ -527,105 +525,115 @@
                                         </address>
                                     </div>
                                 </div>
-                              </div>
                             </div>
                         </div>
-                    </div>  
-                    <h2 class="top-footer__header heading-secondary--main">Contact us</h2>
-                    <p class="top-footer__infor">If you have any questions, please don't hesitate to contact us.</p>
-                        
-                    <div class="container">
-                        <form action="#" class="form-validation">
-                            <div class="row">
-                                <div class="col-6">
-                                    <input class="form-field" data-required="true" type="text" id="fn" placeholder="Name *">
-                                    <input class="form-field" data-required="true" type="email" id="email" placeholder="Email *">
-                                    <input class="form-field" data-required="true" type="text" id="subject" placeholder="Subject *">
-                                </div>
-                                <div class="col-6">
-                                    <textarea placeholder="Subject *" data-required="true" class="form-field"></textarea>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 text-center">
-                                    <button type="submit" class="btn-submit btn--round btn--blue">SUBMIT</button>
-                                </div>
-                            </div>
-                        </form>
                     </div>
-                
+                </div>  
+                <h2 class="top-footer__header heading-secondary--main">Contact us</h2>
+                <p class="top-footer__infor">If you have any questions, please don't hesitate to contact us.</p>
+
+                <div class="container">
+                    <form action="#" class="form-validation">
+                        <div class="row">
+                            <div class="col-6">
+                                <input class="form-field" data-required="true" type="text" id="fn" placeholder="Name *">
+                                <input class="form-field" data-required="true" type="email" id="email" placeholder="Email *">
+                                <input class="form-field" data-required="true" type="text" id="subject" placeholder="Subject *">
+                            </div>
+                            <div class="col-6">
+                                <textarea placeholder="Subject *" data-required="true" class="form-field"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn-submit btn--round btn--blue">SUBMIT</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-            
-                <div class="bot-footer center">
-                    <ul class="bot-footer__nav">
+
+            </div>
+
+            <div class="bot-footer center">
+                <ul class="bot-footer__nav">
                     <a href="#"><li>&#169; 2018 Globuzzer</li></a>
                     <a href="#"><li>Term and Conditions</li></a>
                     <a href="#"><li>Privacy Policy</li></a>
-                    </ul>
-                </div>
-               </div>
-        </footer>
-			<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 
 </div>	
-    <script type='text/javascript' src='js/nav.js'></script>
-  <script>
 
-     // tabbed content
+<script>
+
+    // tabbed content
     // http://www.entheosweb.com/tutorials/css/tabs.asp
     $(".tab_content").hide();
     $(".tab_content:first").show();
 
-  /* if in tab mode */
+    /* if in tab mode */
     $("ul.tabs li").click(function() {
-		
-      $(".tab_content").hide();
-      var activeTab = $(this).attr("rel"); 
-      $("#"+activeTab).fadeIn();		
-		
-      $("ul.tabs li").removeClass("active");
-      $(this).addClass("active");
 
-	  $(".tab_drawer_heading").removeClass("d_active");
-	  $(".tab_drawer_heading[rel^='"+activeTab+"']").addClass("d_active");
-	  
-    });
-	/* if in drawer mode */
-	$(".tab_drawer_heading").click(function() {
-      
-      $(".tab_content").hide();
-      var d_activeTab = $(this).attr("rel"); 
-      $("#"+d_activeTab).fadeIn();
-	  
-	  $(".tab_drawer_heading").removeClass("d_active");
-      $(this).addClass("d_active");
-	  
-	  $("ul.tabs li").removeClass("active");
-	  $("ul.tabs li[rel^='"+d_activeTab+"']").addClass("active");
-    });
-	
+        $(".tab_content").hide();
+        var activeTab = $(this).attr("rel"); 
+        $("#"+activeTab).fadeIn();		
 
-	$('ul.tabs li').last().addClass("tab_last");
-     
-     </script>
-     <script type="text/javascript"
+        $("ul.tabs li").removeClass("active");
+        $(this).addClass("active");
+
+        $(".tab_drawer_heading").removeClass("d_active");
+        $(".tab_drawer_heading[rel^='"+activeTab+"']").addClass("d_active");
+
+    });
+    /* if in drawer mode */
+    $(".tab_drawer_heading").click(function() {
+
+        $(".tab_content").hide();
+        var d_activeTab = $(this).attr("rel"); 
+        $("#"+d_activeTab).fadeIn();
+
+        $(".tab_drawer_heading").removeClass("d_active");
+        $(this).addClass("d_active");
+
+        $("ul.tabs li").removeClass("active");
+        $("ul.tabs li[rel^='"+d_activeTab+"']").addClass("active");
+    });
+
+
+    $('ul.tabs li').last().addClass("tab_last");
+
+    // parallax-photo
+
+    var bg = $('#team-photo');
+    $(window).scroll(function() {
+        var x = $(this).scrollTop();
+        team-photo.css('background-position', '0% ' + parseInt(-x / 10) + 'px');
+    });
+
+
+
+</script>
+<script type="text/javascript"
         src="http://maps.googleapis.com/maps/api/js?libraries=geometry&sensor=false&key=AIzaSyBSsKUzYG_Wz7u2qL6unHqfBOmvaZ0H1Mg&callback=initMap">
 </script>
-  
 
-    <script  src="maps/map-sponser.js"></script>
-    <script  src="maps/map-member.js"></script>
+
+<script  src="maps/map-sponser.js"></script>
+<script  src="maps/map-member.js"></script>
 
 
 <script>
-    
 
-	
-	
-	
-	
-   
+
+
+
+
+
+
 </script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFxBSTTS8-q2X2D8ZkF-0QFTH64QjD5eM&callback=initMap">

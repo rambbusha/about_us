@@ -210,8 +210,9 @@
 	
 /* Feedback  section styles  */
    .feedback-holder {
-  background-color: #DED3D9;
-  padding: 50px 0 55px; 
+   background-color: #fbfbfb;
+   padding: 5px 0 5px;
+   height :100%;
   }
   
   .feedback-holder h2 {
